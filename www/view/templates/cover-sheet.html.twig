@@ -1,0 +1,31 @@
+{% extends "base-layout.html.twig" %}
+
+{% block stylesheets %}
+    <style>
+        {% include 'css/cover-sheet.css.twig' %}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class='page'>
+        <div class='content'>
+            <div class='square-image-container'>
+                <img class='square-image-container__image' src='{{ photo }}' alt='Max Mustermann' />
+            </div>
+
+            <div class='address-background'></div>
+
+            <div class='address-text'>
+                <div class='address-text__line1'>Max Mustermann</div>
+                <div class='address-text__line2'>Musterstrasse 1&nbsp;&nbsp;<i class='fas fa-circle' style='font-size: 6px; position: relative; top: -3px;'></i>&nbsp;&nbsp;12345 Musterstadt</div>
+                <div class='address-text__line3'>max.mustermann@example.com&nbsp;&nbsp;<i class='fas fa-circle' style='font-size: 6px; position: relative; top: -3px;'></i>&nbsp;&nbsp;0800 000 00</div>
+            </div>
+
+            <div class='position-text'>
+                <div class='position-text__line1'>Bewerbung</div>
+                <div class='position-text__line2'>als Senior Software Entwickler</div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

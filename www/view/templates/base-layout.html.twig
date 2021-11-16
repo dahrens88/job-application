@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <style>
+            {% include 'css/reset.css.twig' %}
+        </style>
+        <style>
+            {% include 'css/base.css.twig' %}
+        </style>
+        {% block stylesheets %}{% endblock %}
+        <title>
+            {% block title %}
+                {{ title }}
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+    {% block content %}{% endblock %}
+    </body>
+</html>

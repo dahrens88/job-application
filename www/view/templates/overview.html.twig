@@ -1,0 +1,74 @@
+{% extends "base-layout.html.twig" %}
+
+{% block stylesheets %}
+    <style>
+        {% include 'css/overview.css.twig' %}
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <main>
+            <iframe src='{{ baseUrl }}/template/{{ templateUrlPath }}'></iframe>
+        </main>
+        <nav class="menu">
+            <ul class="parent-menu">
+                <li>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href='{{ baseUrl }}/select-template/{{ constant('\\Dah\\JobApplication\\Enum\\TemplateUrlPathEnum::COVER_SHEET') }}'>
+                                Show cover sheet
+                            </a>
+                        </li>
+                        <li>
+                            <a href='{{ baseUrl }}/create-pdf/{{ constant('\\Dah\\JobApplication\\Enum\\TemplateUrlPathEnum::COVER_SHEET') }}'>
+                                Create PDF
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href='{{ baseUrl }}/select-template/{{ constant('\\Dah\\JobApplication\\Enum\\TemplateUrlPathEnum::COVER_LETTER') }}'>
+                                Show cover letter
+                            </a>
+                        </li>
+                        <li>
+                            <a href='{{ baseUrl }}/create-pdf/{{ constant('\\Dah\\JobApplication\\Enum\\TemplateUrlPathEnum::COVER_LETTER') }}'>
+                                Create PDF
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href='{{ baseUrl }}/select-template/{{ constant('\\Dah\\JobApplication\\Enum\\TemplateUrlPathEnum::CV1') }}'>
+                                Show cv part one
+                            </a>
+                        </li>
+                        <li>
+                            <a href='{{ baseUrl }}/create-pdf/{{ constant('\\Dah\\JobApplication\\Enum\\TemplateUrlPathEnum::CV1') }}'>
+                                Create PDF
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href='{{ baseUrl }}/select-template/{{ constant('\\Dah\\JobApplication\\Enum\\TemplateUrlPathEnum::CV2') }}'>
+                                Show cv part two
+                            </a>
+                        </li>
+                        <li>
+                            <a href='{{ baseUrl }}/create-pdf/{{ constant('\\Dah\\JobApplication\\Enum\\TemplateUrlPathEnum::CV2') }}'>
+                                Create PDF
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}

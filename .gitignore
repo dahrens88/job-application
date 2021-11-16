@@ -1,0 +1,8 @@
+.DS*
+.vagrant
+vendor/
+composer.lock
+.idea/
+*.log
+.phpunit.result.cache
+phpunit.xml

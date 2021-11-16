@@ -1,0 +1,74 @@
+{% extends "base-layout.html.twig" %}
+
+{% block content %}
+    <div class='page'>
+        <div class='content'>
+
+            <header>
+                <div class='circle-image-container'>
+                    <img class='circle-image-container__image' src='{{ photo }}' alt='Max Mustermann'/>
+                </div>
+
+                <div class='title-container'>
+                    <div class='title-container__title-1'>
+                        BEWERBUNGSANSCHREIBEN
+                    </div>
+                    <div class='title-container__title-2'>
+                        Senior Software Entwickler bei Lorem ipsum GmbH
+                    </div>
+                </div>
+            </header>
+
+            <div class='info-container info-container--justified'>
+                <div class='text-container'>
+                    <div class="text-container__label text-container__label--align-right">
+                        Stet clita kasd gubergren
+                    </div>
+                    <div class="text-container__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+
+                <div class='text-container'>
+                    <div class="text-container__label">
+                        Lorem ipsum dolor sit amet,<br>consetetur sadipscing
+                    </div>
+                    <div class="text-container__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+
+                <div class='text-container'>
+                    <div class="text-container__label">
+                    </div>
+                    <div class="text-container__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    </div>
+                </div>
+
+                <div class='text-container'>
+                    <div class="text-container__label">
+                    </div>
+                    <div class="text-container__text">
+                        Lorem ipsum
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class='text-container'>
+                    <div class="text-container__label">
+                    </div>
+                    <div class="text-container__text">
+                        Max Mustermann
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        {% include 'footer.html.twig' %}
+    </div>
+{% endblock %}
