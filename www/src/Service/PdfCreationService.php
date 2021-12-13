@@ -12,16 +12,19 @@ final class PdfCreationService
 
     private Pdf $pdf;
 
-    public function __construct(Pdf $pdf)
+    // @TODO: Define as non shared service
+    public function __construct(Pdf $pdf) 
     {
-        $this->pdf = clone $pdf;
+        $this->pdf = $pdf;
     }
 
     public function createPdf(
         string $fileName,
         string $content
     ): bool {
-        return $this->pdf
+        $pdf = clone $this->pdf;
+        
+        return $pdf
             ->addPage($content)
             ->send($fileName . '.' . self::PDF_EXTENSION);
     }
